@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "kronos",
+  "version": "${version}",
+  "name": "Kronos",
+  "description": "Time is a resource, and you're always running out of it.",
+  "authors": [
+    "LemmaEOF"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/kronos/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "gay.lemmaeof.kronos.client.KronosClient"
+    ],
+    "main": [
+      "gay.lemmaeof.kronos.Kronos"
+    ],
+    "cardinal-components-world": [
+      "gay.lemmaeof.kronos.KronosComponents"
+    ]
+  },
+  "custom": {
+    "cardinal-components": [
+      "kronos:kronos"
+    ]
+  },
+  "mixins": [
+    "kronos.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
